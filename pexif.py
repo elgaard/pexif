@@ -662,7 +662,8 @@ class IfdGPS(IfdData):
         0x3: ("East or West Longitude", "GPSLongitudeRef", ASCII, 2),
         0x4: ("Longitude", "GPSLongitude", RATIONAL, 3),
         0x5: ("Altitude reference", "GPSAltitudeRef", BYTE, 1),
-        0x6: ("Altitude", "GPSAltitude", RATIONAL, 1)
+        0x6: ("Altitude", "GPSAltitude", RATIONAL, 1),
+        0x11:("Image Direction", "GPSImgDirection", RATIONAL, 1)
         }
 
     def __init__(self, e, offset, exif_file, mode, data=None):
